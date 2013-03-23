@@ -1,4 +1,10 @@
 Scrumly::Application.routes.draw do
+  resources :stories
+
+
+  resources :projects
+
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
