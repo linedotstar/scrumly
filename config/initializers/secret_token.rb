@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Scrumly::Application.config.secret_token = 'b941125972a055e5db0562a868a40454ced09c282cc600977626a4c56576047c4b7e5e72883f1957305d9cd9e5e9a97cd4dca079e68234093c8e428903a61e2a'
+Scrumly::Application.config.secret_token = 'c12eda289feb461ee6a25df8dcefd11e39488ff8a2d02aa0fdae4b311c06e50172e0bf9e08201988d5dd4ee0c2447872ff9593d3c25801336251b38a22d47e7b'
