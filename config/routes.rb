@@ -2,6 +2,7 @@ Scrumly::Application.routes.draw do
 
   resources :projects do
     resources :stories
+    resources :sprints
   end
 
   ActiveAdmin.routes(self)
