@@ -7,6 +7,7 @@ Scrumly::Application.routes.draw do
 
   resources :stories do
     resources :tasks
+    resources :acceptance_criteria
   end
 
   ActiveAdmin.routes(self)

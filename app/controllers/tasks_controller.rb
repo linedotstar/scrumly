@@ -14,7 +14,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Story.new(params[:task])
+    @task = Task.new(params[:task])
     @task.save
     respond_with @task
   end
