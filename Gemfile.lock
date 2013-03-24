@@ -40,6 +40,7 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    acts_as_commentable (3.0.1)
     addressable (2.3.3)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
@@ -253,6 +254,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin (>= 0.5.1)
+  acts_as_commentable (= 3.0.1)
   better_errors (>= 0.7.2)
   binding_of_caller (>= 0.7.1)
   bootstrap-sass (>= 2.3.0.0)
