@@ -5,6 +5,10 @@ Scrumly::Application.routes.draw do
     resources :sprints
   end
 
+  resources :stories do
+    resources :tasks
+  end
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
