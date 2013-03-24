@@ -3,4 +3,8 @@ class Project < ActiveRecord::Base
 
   has_many :sprints
   has_many :stories
+
+  def estimate
+    stories.map(&:estimate).sum
+  end
 end
