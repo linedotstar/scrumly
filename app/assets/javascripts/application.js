@@ -16,8 +16,9 @@
 //= require hamlcoffee
 //= require underscore
 //= require backbone
-//= require backbone_rails_sync
+//= require rails_sync
 //= require backbone_datalink
-//= require "backtastic"
+//= require supermodel
+//= require backtastic
 //= require backbone/scrumly
 //= require_tree .

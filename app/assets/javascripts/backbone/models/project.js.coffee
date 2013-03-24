@@ -1,4 +1,4 @@
-class Scrumly.Models.Project extends Backbone.Model
+class Scrumly.Models.Project extends Supermodel.Model
   paramRoot: 'project'
 
   defaults:
@@ -7,4 +7,7 @@ class Scrumly.Models.Project extends Backbone.Model
 
 class Scrumly.Collections.ProjectsCollection extends Backbone.Collection
   model: Scrumly.Models.Project
+  model: (attrs, options) ->
+    return Scrumly.Models.Project.create(attrs, options)
+
   url: '/projects'
