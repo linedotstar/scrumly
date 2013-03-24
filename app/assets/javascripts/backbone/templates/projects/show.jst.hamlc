@@ -1,0 +1,3 @@
+.title= @title
+
+%a{href: "#/index"} Back

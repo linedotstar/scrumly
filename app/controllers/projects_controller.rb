@@ -32,6 +32,6 @@ class ProjectsController < ApplicationController
   private
 
   def load_project
-    Project.find params[:id]
+    @project = Project.find params[:id]
   end
 end

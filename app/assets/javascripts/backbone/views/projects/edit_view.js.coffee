@@ -1,0 +1,24 @@
+Scrumly.Views.Projects ||= {}
+
+class Scrumly.Views.Projects.EditView extends Backtastic.Views.FormView
+  template : JST["backbone/templates/projects/edit"]
+
+  events :
+    "submit #edit-project" : "update"
+
+  update : (e) ->
+    e.preventDefault()
+    e.stopPropagation()
+
+    @model.save(null,
+      success : (project) =>
+        @model = project
+        window.location.hash = "/#{@model.id}"
+    )
+
+  render : ->
+    super
+
+    this.$("form").backboneLink(@model)
+
+    return this

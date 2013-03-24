@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require hamlcoffee
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require "backtastic"
+//= require backbone/scrumly
 //= require_tree .

@@ -1,7 +1,6 @@
-.page-header
-  %h1 Projects
+#projects
 
-%section
-  %ul.projects
-    - @projects.each do |project|
-      %li.project= link_to(project.title, project)
+:coffee
+  $ ->
+    window.router = new Scrumly.Routers.ProjectsRouter projects: #{@projects.to_json.html_safe}
+    Backbone.history.start()

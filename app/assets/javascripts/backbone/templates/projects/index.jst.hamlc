@@ -1,0 +1,11 @@
+%h1 Listing projects
+
+%table#projects-table
+  %tr
+    %th
+    %th
+    %th
+
+%br
+
+%a{href: "#/new"}New Project
