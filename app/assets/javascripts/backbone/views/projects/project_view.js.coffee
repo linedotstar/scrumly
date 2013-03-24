@@ -6,7 +6,9 @@ class Scrumly.Views.Projects.ProjectView extends Backbone.View
   events:
     "click .destroy" : "destroy"
 
-  tagName: "tr"
+  tagName: "li"
+
+  className: "project row"
 
   destroy: () ->
     @model.destroy()

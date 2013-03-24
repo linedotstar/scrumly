@@ -11,7 +11,7 @@ class Scrumly.Views.Projects.IndexView extends Backbone.View
 
   addOne: (project) =>
     view = new Scrumly.Views.Projects.ProjectView({model : project})
-    @$("tbody").append(view.render().el)
+    @$(".projects").append(view.render().el)
 
   render: =>
     $(@el).html(@template(projects: @options.projects.toJSON() ))
