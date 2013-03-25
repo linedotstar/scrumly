@@ -13,7 +13,10 @@ class Scrumly.Views.Projects.EditView extends Backtastic.Views.FormView
     @model.save(null,
       success : (project) =>
         @model = project
-        window.location.hash = "/#{@model.id}"
+        window.location.hash = "/projects/#{@model.id}"
+
+      error: (project, jqXHR) =>
+        @model.set({errors: $.parseJSON(jqXHR.responseText)})
     )
 
   render : ->
