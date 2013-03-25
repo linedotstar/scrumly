@@ -1,8 +1,7 @@
-%td.title= @title
+.title= @title
 
-%td
-  %a{href: "#/#{@id}"} Show
-%td
-  %a{href: "#/#{@id}/edit"}Edit
-%td
-  %a.destroy{href: "#/#{@id}/destroy"}Destroy
+%a{href: "#/projects/#{@id}"} Show
+|
+%a{href: "#/projects/#{@id}/edit"}Edit
+|
+%a.destroy{href: "#/projects/#{@id}/destroy"}Destroy

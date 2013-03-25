@@ -6,7 +6,7 @@ class Scrumly.Views.Stories.StoryView extends Backbone.View
   events:
     "click .destroy" : "destroy"
 
-  tagName: "div"
+  tagName: "li"
   className: 'story'
 
   destroy: () ->

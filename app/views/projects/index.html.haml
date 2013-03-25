@@ -1,6 +1,6 @@
-#projects
+#canvas
 
 :coffee
   $ ->
-    window.router = new Scrumly.Routers.ProjectsRouter projects: #{@projects.to_json.html_safe}
+    window.router = new Scrumly.Routers.AppRouter projects: #{@projects.to_json.html_safe}
     Backbone.history.start()

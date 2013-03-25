@@ -3,10 +3,11 @@ Scrumly.Views.Projects ||= {}
 class Scrumly.Views.Projects.ProjectView extends Backbone.View
   template: JST["backbone/templates/projects/project"]
 
+  tagName: 'li'
+  className: 'project'
+
   events:
     "click .destroy" : "destroy"
-
-  tagName: "tr"
 
   destroy: () ->
     @model.destroy()

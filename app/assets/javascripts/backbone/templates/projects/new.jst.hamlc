@@ -4,4 +4,4 @@
   = @textField(label: "Title", field: "title")
   .form-actions
     %input.btn.btn-primary{type: "submit", value: "Create Project"}
-    %a{href: "#/index"} Cancel
+    %a{href: "#/projects/index"} Cancel

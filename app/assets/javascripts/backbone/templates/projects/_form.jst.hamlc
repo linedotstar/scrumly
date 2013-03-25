@@ -1,5 +1,0 @@
-%form
-  = @textField(label: "Title", field: "title")
-  .form-actions
-    %input.btn.btn-primary{type: "submit", value: "Save"}
-    %a{href: "#/index"} Cancel
