@@ -8,7 +8,7 @@ class Scrumly.Models.Project extends Supermodel.Model
   # TODO figure out why backbone/supermodel can't handle the empty response body that comes with a RESTful update
   #      or make this to a global extension of Supermodel.Model
   parse: (resp, xhr) ->
-    if xhr.status isnt 204 || resp?
+    if xhr?.status isnt 204 || resp?
       super(resp, xhr)
     else
       {}
