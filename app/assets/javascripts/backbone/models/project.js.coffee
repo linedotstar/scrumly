@@ -6,7 +6,6 @@ class Scrumly.Models.Project extends Supermodel.Model
     title: null
 
 class Scrumly.Collections.ProjectsCollection extends Backbone.Collection
-  model: Scrumly.Models.Project
   model: (attrs, options) ->
     return Scrumly.Models.Project.create(attrs, options)
 
