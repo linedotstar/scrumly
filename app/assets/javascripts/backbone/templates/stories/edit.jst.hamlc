@@ -1,0 +1,6 @@
+%form#edit-story{name: "story"}
+  = @textField(label: "Title", field: "title")
+  = @textField(label: 'Estimate', field: 'estimate')
+  .form-actions
+    %input.btn.btn-primary{type: "submit", value: "Save"}
+    %a{href: "#/projects/#{@model.project().id}"} Cancel

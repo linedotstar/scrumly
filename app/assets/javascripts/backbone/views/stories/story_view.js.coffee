@@ -16,5 +16,5 @@ class Scrumly.Views.Stories.StoryView extends Backbone.View
     return false
 
   render: ->
-    $(@el).html(@template(@model.toJSON() ))
+    $(@el).attr('id', "story_#{@model.id}").html(@template(@model.toJSON() ))
     return this

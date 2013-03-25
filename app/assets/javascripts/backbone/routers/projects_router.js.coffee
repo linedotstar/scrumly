@@ -25,6 +25,8 @@ class Scrumly.Routers.ProjectsRouter extends Backbone.Router
     $("#canvas").html(@view.render().el)
 
     project.stories().fetch success: (stories) ->
+      @storiesRouter = new Scrumly.Routers.StoriesRouter(stories: stories.models)
+
       stories_view = new Scrumly.Views.Stories.IndexView(stories: stories)
       @$('#backlog').html(stories_view.render().el)
 

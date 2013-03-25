@@ -1,1 +1,6 @@
 .title= @title
+.estimate= @estimate
+.actions
+  %a{href: '#/stories/#{@id}/edit'} Edit
+  |
+  %a.destroy{href: '#/stories/#{@id}/destroy'} Destroy
